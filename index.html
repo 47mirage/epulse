@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="robots" content="none">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="/static/mogiri.css">
-  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="./static/mogiri.css">
+  <link rel="stylesheet" href="./static/style.css">
 
   <!-- iOS対応 -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,17 +15,17 @@
 
   <!-- manifestの読み込み -->
   <link rel="manifest" href="./manifest.json">
-  <link rel="apple-touch-icon" href="/static/icon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png">
-  <link rel="shortcut icon" href="/static/icon/favicon.ico">
+  <link rel="apple-touch-icon" href="./static/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./static/icon/favicon-16x16.png">
+  <link rel="shortcut icon" href="./static/icon/favicon.ico">
   <meta name="theme-color" content="#ffffff">
 
-  <script src="/static/script.js" defer></script>
+  <script src="./static/script.js" defer></script>
 
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/static/service-worker.js')
+      navigator.serviceWorker.register('./sw.js')
         .then(reg => console.log('SW registered:', reg))
         .catch(err => console.error('SW registration failed:', err));
     }
@@ -41,20 +41,20 @@
         </svg>
       </div>
       <div class="enter" onclick="showPage2()">
-        <img src="/static/image/edsdk_btn_goto_gatepass_01.png" class="frames" data-fid="1" />
-        <img src="/static/image/edsdk_btn_goto_gatepass_02.png" class="frames" data-fid="2" />
-        <img src="/static/image/edsdk_btn_goto_gatepass_03.png" class="frames" data-fid="3" />
-        <img src="/static/image/edsdk_btn_goto_gatepass_04.png" class="frames" data-fid="4" />
-        <img src="/static/image/edsdk_btn_goto_gatepass_05.png" class="frames" data-fid="5" />
-        <img src="/static/image/edsdk_btn_goto_gatepass_06.png" class="frames" data-fid="6" />
-        <img src="/static/image/edsdk_btn_goto_gatepass_07.png" class="frames" data-fid="7" />
-        <img src="/static/image/edsdk_btn_goto_gatepass_08.png" class="frames" data-fid="8" />
-        <img src="/static/image/edsdk_btn_goto_gatepass_09.png" class="frames" data-fid="9" />
-        <img src="/static/image/edsdk_btn_goto_gatepass_10.png" class="frames" data-fid="10" />
-        <img src="/static/image/edsdk_btn_goto_gatepass_11.png" class="frames" data-fid="11" />
-        <img src="/static/image/edsdk_btn_goto_gatepass_12.png" class="frames" data-fid="12" />
-        <img src="/static/image/edsdk_btn_goto_gatepass_13.png" class="frames" data-fid="13" />
-        <img src="/static/image/edsdk_btn_goto_gatepass_14.png" class="frames" data-fid="14" />
+        <img src="./static/image/edsdk_btn_goto_gatepass_01.png" class="frames" data-fid="1" />
+        <img src="./static/image/edsdk_btn_goto_gatepass_02.png" class="frames" data-fid="2" />
+        <img src="./static/image/edsdk_btn_goto_gatepass_03.png" class="frames" data-fid="3" />
+        <img src="./static/image/edsdk_btn_goto_gatepass_04.png" class="frames" data-fid="4" />
+        <img src="./static/image/edsdk_btn_goto_gatepass_05.png" class="frames" data-fid="5" />
+        <img src="./static/image/edsdk_btn_goto_gatepass_06.png" class="frames" data-fid="6" />
+        <img src="./static/image/edsdk_btn_goto_gatepass_07.png" class="frames" data-fid="7" />
+        <img src="./static/image/edsdk_btn_goto_gatepass_08.png" class="frames" data-fid="8" />
+        <img src="./static/image/edsdk_btn_goto_gatepass_09.png" class="frames" data-fid="9" />
+        <img src="./static/image/edsdk_btn_goto_gatepass_10.png" class="frames" data-fid="10" />
+        <img src="./static/image/edsdk_btn_goto_gatepass_11.png" class="frames" data-fid="11" />
+        <img src="./static/image/edsdk_btn_goto_gatepass_12.png" class="frames" data-fid="12" />
+        <img src="./static/image/edsdk_btn_goto_gatepass_13.png" class="frames" data-fid="13" />
+        <img src="./static/image/edsdk_btn_goto_gatepass_14.png" class="frames" data-fid="14" />
       </div>
     </div>
     <div class="main">
@@ -104,8 +104,8 @@
           <div class="ticket-main dashed-bottom">
             <div class="ticket-info">
               <div class="status">
-                <img src="/static/image/edsdk_v3_icon_ticket_unused.png" class="ticket-unused-icon icon icon-unused">
-                <img src="/static/image/edsdk_v3_icon_ticket_gatepass.png" class="ticket-used-icon icon icon-used">
+                <img src="./static/image/edsdk_v3_icon_ticket_unused.png" class="ticket-unused-icon icon icon-unused">
+                <img src="./static/image/edsdk_v3_icon_ticket_gatepass.png" class="ticket-used-icon icon icon-used">
               </div>
               <div class="info-list">
                 <span class="name">前方エリア</span>
@@ -114,12 +114,12 @@
                 <span class="price">¥11,000(税込)</span>
               </div>
               <div class="used-stamp">
-                <img src="/static/image/edsdk_v3_st_ticket_used_stamp.png" class="icon">
+                <img src="./static/image/edsdk_v3_st_ticket_used_stamp.png" class="icon">
               </div>
             </div>
             <div class="transfer">
               <div class="button">
-                <img src="/static/image/edsdk_ic_distribution_button.png" class="icon">
+                <img src="./static/image/edsdk_ic_distribution_button.png" class="icon">
               </div>
             </div>
           </div>
@@ -165,7 +165,7 @@
             </div>
           </div>
           <div class="arrow-button">
-            <img src="/static/image/edsdk_v3_icon_arrow_up.png" class="icon">
+            <img src="./static/image/edsdk_v3_icon_arrow_up.png" class="icon">
           </div>
         </div>
       </section>
@@ -215,8 +215,8 @@
             </div>
             
             <div class="mogiri-card-touch">
-              <img src="/static/image/edsdk_v3_icon_gate_star.png" class="mogiri-card-touch-image">
-              <img src="/static/image/edsdk_v3_icon_gate_star.png" class="mogiri-card-touch-image">
+              <img src="./static/image/edsdk_v3_icon_gate_star.png" class="mogiri-card-touch-image">
+              <img src="./static/image/edsdk_v3_icon_gate_star.png" class="mogiri-card-touch-image">
             </div>
             <div class="mogiri-title-venue">
               <!-- <span class="mogiri-title-text">MARQUEE Fes． - ーday1ー</span>
@@ -234,15 +234,15 @@
           <div class="mogiri-card-content" id="mogiri-swiper">
             <div class="mogiri-card-foreground" id="mogiri-foreground">
               <div class="mogiri-card-foreground-gate">
-                <img src="/static/image/edsdk_v3_icon_gate.png" class="mogiri-card-foreground-image">
+                <img src="./static/image/edsdk_v3_icon_gate.png" class="mogiri-card-foreground-image">
               </div>
               <div class="mogiri-card-foreground-gate-animation">
-                <img src="/static/image/edsdk_v3_anim_gate_01.png" class="gate-frame frame1">
-                <img src="/static/image/edsdk_v3_anim_gate_02.png" class="gate-frame frame2">
-                <img src="/static/image/edsdk_v3_anim_gate_03.png" class="gate-frame frame3">
-                <img src="/static/image/edsdk_v3_anim_gate_04.png" class="gate-frame frame4">
-                <img src="/static/image/edsdk_v3_anim_gate_05.png" class="gate-frame frame5">
-                <img src="/static/image/edsdk_v3_anim_gate_06.png" class="gate-frame frame6">
+                <img src="./static/image/edsdk_v3_anim_gate_01.png" class="gate-frame frame1">
+                <img src="./static/image/edsdk_v3_anim_gate_02.png" class="gate-frame frame2">
+                <img src="./static/image/edsdk_v3_anim_gate_03.png" class="gate-frame frame3">
+                <img src="./static/image/edsdk_v3_anim_gate_04.png" class="gate-frame frame4">
+                <img src="./static/image/edsdk_v3_anim_gate_05.png" class="gate-frame frame5">
+                <img src="./static/image/edsdk_v3_anim_gate_06.png" class="gate-frame frame6">
               </div>
             </div>
           </div>
@@ -258,9 +258,9 @@
             <div class="select-ticket-main">
               <div class="select-ticket-info">
                 <div class="select-ticket-icon">
-                  <img src="/static/image/edsdk_v3_icon_ticket_selected.png" class="select-ticket-icon-selected">
-                  <img src="/static/image/edsdk_v3_icon_ticket_unselected.png" class="select-ticket-icon-unselected"></img>
-                  <img src="/static/image/edsdk_v3_icon_ticket_gatepass.png" class="select-ticket-icon-used"></img>
+                  <img src="./static/image/edsdk_v3_icon_ticket_selected.png" class="select-ticket-icon-selected">
+                  <img src="./static/image/edsdk_v3_icon_ticket_unselected.png" class="select-ticket-icon-unselected"></img>
+                  <img src="./static/image/edsdk_v3_icon_ticket_gatepass.png" class="select-ticket-icon-used"></img>
                 </div>
                 <div class="select-ticket-info-list number">
                   <span class="select-ticket-name">前方エリア</span>
@@ -268,7 +268,7 @@
                   <span class="select-ticket-reference-number "><span class="number">79</span>番</span>
                 </div>
                 <div class="select-ticket-used">
-                  <img src="/static/image/edsdk_v3_st_ticket_used_stamp.png" class="select-ticket-used-stamp">
+                  <img src="./static/image/edsdk_v3_st_ticket_used_stamp.png" class="select-ticket-used-stamp">
                 </div>
               </div>
               <p class="select-ticket-used-date">使用日時：<span class="used-timestamp number">null</span></p>
