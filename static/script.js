@@ -426,7 +426,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const state = button.classList.contains('up');
             button.classList.toggle('up', !state);
             if (state) {
-                image.src = "/static/image/edsdk_v3_icon_arrow_up.png";
+                image.src = "./static/image/edsdk_v3_icon_arrow_up.png";
                 description.style.height = description.scrollHeight + 'px';
                 description.style.margin = '8px 0 0';
                 description.addEventListener('transitionend', function handler() {
@@ -434,7 +434,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     description.removeEventListener('transitionend', handler);
                 });
             } else {
-                image.src = "/static/image/edsdk_v3_icon_arrow_down.png";
+                image.src = "./static/image/edsdk_v3_icon_arrow_down.png";
                 description.style.height = description.scrollHeight + 'px';
                 description.style.margin = '8px 0';
                 requestAnimationFrame(() => {
